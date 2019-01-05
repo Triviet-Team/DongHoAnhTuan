@@ -1,0 +1,819 @@
+extends ./inc
+
+block article
+  article
+    .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#exampleModalCenterTitle.modal-title Xem nhanh sản phẩm
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-lg-6
+                .modal-img
+                  img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
+                  .xzoom-thumbs
+                    .owl-carousel.xzoom-carousel.owl-theme
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+              .col-lg-6
+                .quickview-detail
+                  h2 Logitech G502 Proteus Spectrum
+                  h4.price-product
+                    | 699.000 đ 
+                    span.price-default 700.000 đ
+                  h5
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                  .quantity
+                    span Số lượng: 
+                    input(type='number', value='1', min='1')
+                    button.custom-cart thêm vào giỏ
+                    button.quantity-wishlist.custom-wishlist
+                      i.mdi.mdi-heart
+          .modal-footer
+            button.btn.btn-light(type='button', data-dismiss='modal') Đóng
+
+
+    section.slider.d-lg-block.d-none
+      .owl-carousel.slider-carousel.owl-theme
+        .item
+          .slider-text
+            h5 Ưu đãi năm mới, giảm ngay 0.0.1%
+            h1.wow(data-wow-delay='.3s') Daniel Wellington
+            .slider-text-content
+              p.wow(data-wow-delay='.3s') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sint odio voluptates aliquid fugit id quae architecto blanditiis obcaecati sunt.
+              h3 giá chỉ từ: 69.000.000 đ
+            .slider-text-btn.wow(data-wow-delay='1s')
+              a.slider-text-btn-shopping(href='chi-tiet-san-pham.html') đến xem ngay
+          img(src='../img/slider-1.png', alt='')
+        
+        .item
+          .slider-text
+            h5 Ưu đãi năm mới, giảm ngay 0.0.1%
+            h1.wow(data-wow-delay='.3s') Daniel Wellington
+            .slider-text-content
+              p.wow(data-wow-delay='.3s') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sint odio voluptates aliquid fugit id quae architecto blanditiis obcaecati sunt.
+              h3 giá chỉ từ: 69.000.000 đ
+            .slider-text-btn.wow(data-wow-delay='1s')
+              a.slider-text-btn-shopping(href='chi-tiet-san-pham.html') đến xem ngay
+          img(src='../img/slider-1.png', alt='')
+
+        .item
+          .slider-text
+            h5 Ưu đãi năm mới, giảm ngay 0.0.1%
+            h1.wow(data-wow-delay='.3s') Daniel Wellington
+            .slider-text-content
+              p.wow(data-wow-delay='.3s') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sint odio voluptates aliquid fugit id quae architecto blanditiis obcaecati sunt.
+              h3 giá chỉ từ: 69.000.000 đ
+            .slider-text-btn.wow(data-wow-delay='1s')
+              a.slider-text-btn-shopping(href='chi-tiet-san-pham.html') đến xem ngay
+          img(src='../img/slider-1.png', alt='')
+
+
+    section.partner
+      .owl-carousel.partner-carousel.owl-theme
+        .item
+          img(src='../img/partner.png')
+        .item
+          img(src='../img/product-1.png')
+        .item
+          img(src='../img/partner.png')
+        .item
+          img(src='../img/partner.png')
+        .item
+          img(src='../img/partner.png')
+        .item
+          img(src='../img/partner.png')
+
+    section.banner
+      .container
+        .row
+          .col-lg-6
+            .box-banner.box-banner-1
+              a(href='san-pham.html')
+                img(src='../img/cate-img-2.png')
+              .box-banner-content
+                h1 đồng hồ
+                h3 Nam, Nữ
+                a(href='san-pham.html') mua sắm ngay
+          .col-lg-6
+            .box-banner.box-banner-2
+              a(href='san-pham.html')
+                img(src='../img/cate-img-1.png')
+              .box-banner-content
+                h1 điện máy
+                h3 Điện thoại, Máy tính bảng
+                a(href='san-pham.html') mua sắm ngay
+
+      section.product-hot
+        .container
+          nav.navbar.navbar-light.d-block.d-sm-none
+            button.navbar-toggler.toggler-example(type='button', data-toggle='collapse', data-target='#navbarSupportedContent1', aria-controls='navbarSupportedContent1', aria-expanded='false', aria-label='Toggle navigation')
+              a.navbar-brand Sản phẩm bán chạy
+            i.mdi.mdi-chevron-down
+            #navbarSupportedContent1.collapse.navbar-collapse
+              ul.nav.navbar-nav.mr-auto
+                li.nav-item.active
+                  a#seller-tab.nav-link.active(data-toggle='tab', href='#seller', role='tab', aria-controls='seller', aria-selected='true') 
+                    | Sản phẩm bán chạy
+                li.nav-item
+                  a#new-tab.nav-link(data-toggle='tab', href='#new', role='tab', aria-controls='new', aria-selected='false') 
+                    | Sản phẩm mới
+                li.nav-item
+                  a#sale-tab.nav-link(data-toggle='tab', href='#sale', role='tab', aria-controls='sale', aria-selected='false') 
+                    | Sản phẩm khuyến mãi
+
+          ul.nav.nav-tabs.justify-content-center.d-none.d-sm-block(role='tablist')
+            li.nav-item
+              a#seller-tab.nav-link.active(data-toggle='tab', href='#seller', role='tab', aria-controls='seller', aria-selected='true') 
+                | Sản phẩm bán chạy
+            li.nav-item
+              a#new-tab.nav-link(data-toggle='tab', href='#new', role='tab', aria-controls='new', aria-selected='false') 
+                | Sản phẩm mới
+            li.nav-item
+              a#sale-tab.nav-link(data-toggle='tab', href='#sale', role='tab', aria-controls='sale', aria-selected='false') 
+                | Sản phẩm khuyến mãi
+
+
+
+          .tab-content
+            #seller.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='seller-tab')
+              .swiper-container.swiper-hot
+                .swiper-wrapper
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-1.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+
+                .swiper-button-next
+                .swiper-button-prev
+
+
+            #new.tab-pane.fade(role='tabpanel', aria-labelledby='new-tab')
+              .swiper-container.swiper-hot
+                .swiper-wrapper
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+                  .swiper-slide
+                    .box-product
+                      .box-product-status
+                        h5 -17%
+                        h5 mới
+                      .box-product-img
+                        .box-product-img-custom
+                          a.custom-quickview(data-toggle="modal" data-target=".product-modal-1", href='#')
+                            i.mdi.mdi-eye-plus
+                          a.custom-wishlist
+                            i.mdi.mdi-heart
+                        a(href='chi-tiet-san-pham.html', title='Bấm để xem chi tiết')
+                          img(src='../img/product-2.png')
+                      .box-product-cart.text-center
+                        a.custom-cart
+                          i.mdi.mdi-cart-plus
+                          | Thêm vào giỏ
+                      .box-product-detail.text-center
+                        h6(title='Đồng hồ nam, Rolex') Đồng hồ nam, Rolex
+                        h4
+                          a(href='chi-tiet-san-pham.html', title='Lenovo Ideacentre 300')
+                            | Lenovo Ideacentre 300
+                        h5
+                          | 69.000.000 đ
+                          span 70.000.000 đ
+                    - // End box-product
+
+                .swiper-button-next
+                  i.mdi.mdi-chevron-right
+                .swiper-button-prev
+                  i.mdi.mdi-chevron-left
+            
+            #sale.tab-pane.fade(role='tabpanel', aria-labelledby='sale-tab')
+              h3 Sản phẩm chưa được cập nhật
+    - // END HOT
+    section.service.d-none.d-lg-block
+      .container
+        .row
+          .col
+            .box-service
+              i.mdi.mdi-truck-fast
+              h4 miễn phí vận chuyển
+              h5 Trong phạm vi nội thành TP.HCM
+          .col
+            .box-service
+              i.mdi.mdi-medal
+              h4 BẢO HÀNH 2 NĂM
+              h5 Cho tất cả các sản phẩm trên 5 triệu
+          .col
+            .box-service
+              i.mdi.mdi-autorenew
+              h4 HOÀN TIỀN TRONG 30 NGÀY
+              h5 Nếu sản phẩm lỗi, hư hỏng

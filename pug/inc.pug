@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Đồng Hồ Anh Tuấn
+    link(rel='stylesheet', href='../css/bootstrap-grid.min.css')
+    link(rel='stylesheet', href='../css/bootstrap-reboot.min.css')
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/mdb.min.css')
+    link(rel='stylesheet', href='../css/font-awesome.min.css')
+    link(rel='stylesheet', href='../css/owl.carousel.min.css')
+    link(rel='stylesheet', href='../css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='../css/xzoom.css')
+    link(rel='stylesheet', href='../css/magnific-popup.css')
+    link(rel='stylesheet', href='../css/animate.min.css')
+    link(rel='stylesheet', href='../css/jquery.fancybox.min.css')
+    link(rel='stylesheet', href='../css/materialdesignicons.min.css')
+    link(rel='stylesheet', href='../css/swiper.min.css')
+    link(rel='stylesheet', href='../css/sweetalert2.min.css')
+    link(rel='stylesheet', href='../css/layout.css')
+    link(rel='shortcut icon', href='../img/favicon.png')
+  body
+    .go-top.wow.zoomInRight(title='Lên đầu trang', data-wow-duration='2s')
+      i.mdi.mdi-watch-import
+    block header
+      header
+        section.header-top.d-none.d-lg-block
+          .container
+            .row
+              .col
+                h5 Shop đồng hồ điện thoại Anh Tuấn xin kính chào quý khách
+              .col.text-right
+                .header-top-social
+                  a(href='#')
+                    i.mdi.mdi-facebook
+                  a(href='#')
+                    i.mdi.mdi-twitter
+                  a(href='#')
+                    i.mdi.mdi-skype
+                  a(href='#')
+                    i.mdi.mdi-youtube  
+        section.header-bottom
+          .container
+            .row
+              .col-12
+                .logo
+                  a(href='index.html')
+                    img(src='../img/logo.png')
+
+              .col-lg-6.d-none.d-lg-block
+                .hotline-top
+                  a(href="tel:0938393169")
+                    i.mdi.mdi-phone-incoming
+                    p Liên hệ với chúng tôi
+                    p Hotline: 0938 393 169
+
+              .col-lg-6
+                .custom-header.text-right
+                  #accordionExample.accordion
+                    a.search-btn(title='Tìm kiếm', data-toggle='collapse', href='#search', role='button', aria-expanded='true', aria-controls='search')
+                      i.mdi.mdi-magnify
+                    a.wishlist-btn(title='Danh sách yêu thích', href='danh-sach-yeu-thich.html')
+                      i.mdi.mdi-heart
+                    a.cart-open-btn(title='Giỏ hàng', data-toggle='collapse', href='#cart', role='button', aria-expanded='false', aria-controls='cart')
+                      i.mdi.mdi-shopify
+                      span.price-cart 60.000.000 đ
+                      span.badge.badge-light 2
+
+                    #cart.collapse(data-parent='#accordionExample')
+                      .card.card-body.cart-form
+                        .cart-form-top.text-left
+                          p Có 2 sản phẩm trong giỏ
+                          p 
+                            | Tổng tiền
+                            span 60.000.000 đ
+
+                        .cart-form-btn.text-center
+                          a(href='thanh-toan.html') thanh toán ngay
+
+                        .cart-form-box-product
+                          .cart-form-box-product-img
+                            img(src='../img/product-1.png', alt='')
+                          .cart-form-box-product-detail
+                            h5
+                              a(href='chi-tiet-san-pham.html') Kidviton 120Ml Stada
+                            h6
+                              | 690.000 đ
+                              |  x 
+                              span 1
+                            a(href='#')
+                              i.fa.fa-times(title='Xóa', aria-hidden='true')
+                        .cart-form-box-product
+                          .cart-form-box-product-img
+                            img(src='../img/product-1.png', alt='')
+                          .cart-form-box-product-detail
+                            h5
+                              a(href='chi-tiet-san-pham.html') Kidviton 120Ml Stada
+                            h6
+                              | 690.000 đ
+                              |  x 
+                              span 1
+                            a(href='#')
+                              i.fa.fa-times(title='Xóa', aria-hidden='true')
+                        .cart-form-btn.text-center
+                          a(href='gio-hang.html') Vào giỏ hàng
+
+        section.menu.wow.animated
+          .container
+            .main-menu
+              a.toggleMenu.ssm-toggle-nav
+                i.mdi.mdi-menu
+              ul.nav
+                  li.nav-item
+                    a(href='index.html') Trang chủ
+                  li.nav-item
+                    a(href='gioi-thieu.html') giới thiệu
+                  li.nav-item
+                    a(href='san-pham.html') đồng hồ 
+                    i.mdi.mdi-chevron-down.btn-menu-down
+                    .menu-bottom.out
+                      .row
+                        .col-xl-6
+                          h4
+                            a(href='san-pham.html') đồng hồ nam
+                          ul
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                        .col-xl-6
+                          h4
+                            a(href='san-pham.html') đồng hồ nữ
+                          ul
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                      .row
+                        .col
+                          img(src='../img/watch-top-1.png')
+                        .col
+                          img(src='../img/watch-top-2.png')
+
+                  li.nav-item
+                    a(href='san-pham.html') điện máy
+                    i.mdi.mdi-chevron-down.btn-menu-down
+                    .menu-bottom.out
+                      .row
+                        .col-xl-6
+                          h4
+                            a(href='san-pham.html') điện thoại
+                          ul
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                        .col-xl-6
+                          h4
+                            a(href='san-pham.html') máy tính bảng
+                          ul
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                            li
+                              a(href='san-pham.html') Patek Philippe
+                            li
+                              a(href='san-pham.html') Rolex
+                      .row
+                        .col
+                          img(src='../img/phone-top-1.png')
+                        .col
+                          img(src='../img/phone-top-2.png')
+
+                  li.nav-item
+                    a(href='khuyen-mai.html') khuyến mãi
+                  li.nav-item
+                    a(href='dieu-khoan.html') điều khoản
+                  li.nav-item
+                    a(href='lien-he.html') liên hệ
+
+
+        #search.collapse(data-parent='#accordionExample')
+          .card.card-body.search-form
+            h3.text-center Tìm kiếm
+            input#search-form(type='text', name='search', placeholder='Nhập từ khóa')
+            select.form-control
+              option(value='') Chọn danh mục
+              option(value='') Tủ Locker - Tủ sắt
+            button
+              i.fa.fa-search(aria-hidden='true')
+              | Tìm kiếm
+        .overlay
+        .ssm-overlay.ssm-toggle-nav
+
+    block article
+
+    block footer
+      footer
+
+      script(src='../js/jquery-3.3.1.min.js')
+      script(src='../js/jquery.touchSwipe.min.js')
+      script(src='../js/jquery.slideandswipe.min.js')
+      script(src='../js/bootstrap.min.js')
+      script(src='../js/bootstrap.bundle.min.js')
+      script(src='../js/mdb.min.js')
+      script(src='../js/owl.carousel.min.js')
+      script(src='../js/wow.min.js')
+      script(src='../js/xzoom.min.js')
+      script(src='../js/magnific-popup.js')
+      script(src='../js/jquery.fancybox.min.js')
+      script(src='../js/swiper.min.js')
+      script(src='../js/sweetalert2.min.js')
+      script(src='../js/layout.js')
