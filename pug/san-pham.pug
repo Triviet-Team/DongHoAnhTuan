@@ -12,20 +12,16 @@ block article
               li.breadcrumb-item.active Đồng hồ
 
     section.product-page
-      .filter-btn.d-block.d-lg-none
-        i.mdi.mdi-filter-variant
-        | Bộ lọc
-
       .container
         .row
           .col-lg-3
             .filter
+              i.mdi.mdi-close.close-filter.d-block.d-lg-none
+
               .filter-cate
                 .title-filter
                   h3 lọc sản phẩm
-                
-                a.filter-cate-title(href="san-pham.html")
-                  | Tất cả đồng hồ
+              
                 a.filter-cate-title(data-toggle='collapse', href='#filter-cate-1', role='button', aria-expanded='true', aria-controls='filter-cate-1')
                   | Đồng hồ nam
                   i.mdi.mdi-chevron-down
@@ -138,10 +134,23 @@ block article
                 a Trở về mặc định
           .col-lg-9
             .product-page-main
+              h1 đồng hồ
+
               .row
-                .col-7
-                  h2 đồng hồ
-                .col-5.text-right
+                .col-lg-0.col-4.col-md-2.d-block.d-lg-none
+                  .filter-btn
+                    i.mdi.mdi-filter-variant
+                    | Bộ lọc
+                .col-xl-8.col-lg-7.col-md-5.d-none.d-md-block
+                  h5.view-type-name Kiểu xem: 
+                  .view-type.grid-2(title='Dạng lưới 2 cột')
+                    i.mdi.mdi-view-grid
+                  .view-type.grid-3.active(title='Dạng lưới 3 cột')
+                    i.mdi.mdi-view-module
+                  .view-type.grid-1(title='Dạng danh sách')
+                    i.mdi.mdi-view-list
+
+                .col-xl-4.col-lg-5.col-md-5.col-8.text-right
                   .sort-product
                     select.form-control
                       option Sắp xếp mặc định
@@ -177,7 +186,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -202,7 +212,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -227,7 +238,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -252,7 +264,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -277,7 +290,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -302,7 +316,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -327,7 +342,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -352,7 +368,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -377,7 +394,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -402,7 +420,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -427,7 +446,8 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
                 .box-product
                   .box-product-status
                     h5 -17%
@@ -452,8 +472,9 @@ block article
                     h5
                       | 69.000.000 đ
                       span 70.000.000 đ
-                - // End box-product
-              
+
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio inventore dignissimos beatae sed sit magni? Fugit natus illum eos. Hic consequuntur eius nam, dignissimos eaque aliquam facilis accusamus ullam?
+                
               nav
                 ul.pagination.justify-content-end
                   li.page-item

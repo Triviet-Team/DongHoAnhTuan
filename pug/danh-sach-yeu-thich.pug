@@ -1,0 +1,80 @@
+extends ./inc
+
+block article
+  article
+    section.bread-crumb
+      .container
+        .bc-icons
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='index.html') Trang chủ
+              li.breadcrumb-item.active Danh sách yêu thích
+
+    section.wishlist-page
+      .container
+        .row
+          .col-lg-3.col-md-6.col-sm-6
+            .box-wishlist-page
+              img(src='../img/product-1.png', alt='')
+              h5 Logitech G502 Proteus Spectrum
+              h4 699.000 đ
+              .box-wishlist-page-quantity.text-center
+                | Số lượng: 
+                input(type='number', value='1', min='1')
+                button.custom-cart(type='submit') thêm vào giỏ
+              .box-wishlist-page-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết sản phẩm
+                a.wishlist-remove(href='#') Xóa
+          .col-lg-3.col-md-6.col-sm-6
+            .box-wishlist-page
+              img(src='../img/product-1.png', alt='')
+              h5 Logitech G502 Proteus Spectrum
+              h4 699.000 đ
+              .box-wishlist-page-quantity.text-center
+                | Số lượng: 
+                input(type='number', value='1', min='1')
+                button.custom-cart(type='submit') thêm vào giỏ
+              .box-wishlist-page-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết sản phẩm
+                a.wishlist-remove(href='#') Xóa
+          .col-lg-3.col-md-6.col-sm-6
+            .box-wishlist-page
+              img(src='../img/product-1.png', alt='')
+              h5 Logitech G502 Proteus Spectrum
+              h4 699.000 đ
+              .box-wishlist-page-quantity.text-center
+                | Số lượng: 
+                input(type='number', value='1', min='1')
+                button.custom-cart(type='submit') thêm vào giỏ
+              .box-wishlist-page-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết sản phẩm
+                a.wishlist-remove(href='#') Xóa
+          .col-lg-3.col-md-6.col-sm-6
+            .box-wishlist-page
+              img(src='../img/product-1.png', alt='')
+              h5 Logitech G502 Proteus Spectrum
+              h4 699.000 đ
+              .box-wishlist-page-quantity.text-center
+                | Số lượng: 
+                input(type='number', value='1', min='1')
+                button.custom-cart(type='submit') thêm vào giỏ
+              .box-wishlist-page-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết sản phẩm
+                a.wishlist-remove(href='#') Xóa
+        .row
+          .col-lg-8.col-md-9
+            .wishlist-btn.text-center.text-md-left
+              button
+                a
+                  i.mdi.mdi-refresh
+                  | cập nhật danh sách yêu thích
+              button
+                a
+                  i.mdi.mdi-cart
+                  | thêm tất cả vào giỏ
+          .col-lg-4.col-md-3.text-md-right.text-center
+            .wishlist-btn.back-index
+              a(href='san-pham.html')
+                i.mdi.mdi-undo
+                | tiếp tục mua sắm
