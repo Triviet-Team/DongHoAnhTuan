@@ -922,8 +922,6 @@ select:focus {
 }
 
 .product-hot {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
   margin-bottom: 30px;
 }
 .product-hot .nav-tabs {
@@ -2192,6 +2190,7 @@ select:focus {
   color: #cccccc;
   border: none;
   cursor: pointer;
+  margin-bottom: 25px;
 }
 .wishlist-page .wishlist-btn i {
   margin-right: 10px;
@@ -2892,6 +2891,7 @@ select:focus {
 
   .tab-product {
     grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .partner .owl-carousel .owl-item img {
